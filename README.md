@@ -37,7 +37,7 @@ yarn test
 Open [http://localhost:3002](http://localhost:3002) with your browser to see the result.
 
 
-### Assignment - Create a magic card collection site with the following features
+## Assignment - Create a magic card collection site with the following features
 
 - [x] Framework to use: next.js
 - [x] The project must contain :
