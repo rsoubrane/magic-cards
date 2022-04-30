@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
+import router from 'next/router';
 // utils
 import { useForm, ValidationError } from '@formspree/react';
 import { useSnackbar } from 'notistack';
@@ -11,7 +13,6 @@ import Layout from '../layouts';
 import Page from '../components/Page';
 // types
 import { User } from 'src/@types/user';
-import Image from 'next/image';
 
 // ----------------------------------------------------------------------
 
@@ -73,11 +74,11 @@ export default function Contact() {
 
 	const [state, handleSubmit] = useForm('moqrpkvl', { data });
 
-	console.log('state.errors: ', state.errors);
 	if (state.succeeded) {
 		enqueueSnackbar(`Thanks ${data.name} for sending us a message.`, {
 			variant: 'success'
 		});
+		router.replace('/home');
 	} else if (state.errors.length) {
 		enqueueSnackbar(`Error while sending the message.`, {
 			variant: 'error'
@@ -101,7 +102,7 @@ export default function Contact() {
 					src='https://wallpaperaccess.com/full/2288846.jpg'
 					alt='magic background'
 					layout='fill'
-					objectFit='cover'
+					quality={100}
 					style={{
 						transform: 'scale(-1, 1)'
 					}}
