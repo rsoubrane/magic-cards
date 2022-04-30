@@ -56,4 +56,4 @@ Open [http://localhost:3002](http://localhost:3002) with your browser to see the
 - [ ] A clean `package.json` that allows to install the project and launch all the necessary commands (dev, build, test, etc)
 - [x] An `README.md` explaining the project and the commands exposed in the `package.json`.
 - [x] API : [https://scryfall.com/docs/api](https://scryfall.com/docs/api)
-- [ ] The site must be hosted on [vercel.com](http://vercel.com) - You can access it by going to : 
+- [x] The site must be hosted on [vercel.com](http://vercel.com) - You can access it by going [here](https://magic-cards-one.vercel.app/)
