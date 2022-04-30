@@ -15,7 +15,7 @@ export const handlers = [
 		return res(ctx.json(user));
 	}),
 
-	rest.post('/login', (req, res, ctx) => {
+	rest.post('/login', (req: { body: { username: string } }, res, ctx) => {
 		const { username } = req.body;
 
 		const user = {
