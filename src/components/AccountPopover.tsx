@@ -38,10 +38,7 @@ export default function AccountPopover() {
 			const { data } = await axios.post('/login', {
 				username: 'romain.soubrane'
 			});
-
-			router.replace('/home');
-			enqueueSnackbar(`User ${data.firstName} ${data.lastName} successfully logged in!`, { variant: 'success' });
-			handleClose();
+			closeAndRedirect(`User ${data.firstName} ${data.lastName} successfully logged in!`);
 		} catch (error) {
 			console.error(error);
 			enqueueSnackbar('Unable to login!', { variant: 'error' });
@@ -51,14 +48,17 @@ export default function AccountPopover() {
 	const handleLogout = async () => {
 		try {
 			await axios.post('/logout', {});
-
-			router.replace('/home');
-			enqueueSnackbar('Logged out successfully!', { variant: 'success' });
-			handleClose();
+			closeAndRedirect(`User successfully logged out!`);
 		} catch (error) {
 			console.error(error);
 			enqueueSnackbar('Unable to logout!', { variant: 'error' });
 		}
+	};
+
+	const closeAndRedirect = (message: string) => {
+		handleClose();
+		enqueueSnackbar(message, { variant: 'success' });
+		router.replace('/home');
 	};
 
 	return (
