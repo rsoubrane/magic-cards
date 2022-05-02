@@ -17,9 +17,10 @@ import {
 	Divider
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+// components
+import AccountPopover from './AccountPopover';
 // assets
 import Logo from '../../public/logo/logo.png';
-import AccountPopover from './AccountPopover';
 
 // ----------------------------------------------------------------------
 
@@ -37,7 +38,7 @@ const AppBar = () => {
 	const HomeButton = ({ sx }: any) => (
 		<Link href='/home' passHref>
 			<Typography variant='h6' noWrap component='div' sx={{ ...sx, cursor: 'pointer' }}>
-				<Image src={Logo} alt='Logo' width={200} height={50} />
+				<Image src={Logo} alt='Logo' width={200} height={50} quality={50} />
 			</Typography>
 		</Link>
 	);
