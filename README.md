@@ -51,7 +51,7 @@ Open [http://localhost:3002](http://localhost:3002) with your browser to see the
 - [x] The site must manage the responsive design (media queries)
 - [x] The layout must use flexbox and/or grid
 - [x] Animations must be present via `framer-motion`.
-- [ ] backstop.js must be present on the project with a reference already generated
+- [x] backstop.js must be present on the project with a reference already generated - You can see the references in `./src/backstop/bitmaps_reference` and access the working tests [here](./backstop/html_report/index.html)
 - [ ] Functional tests will be present with cypress (testing user paths)
 - [ ] A clean `package.json` that allows to install the project and launch all the necessary commands (dev, build, test, etc)
 - [x] An `README.md` explaining the project and the commands exposed in the `package.json`.
