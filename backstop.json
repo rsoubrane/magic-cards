@@ -1,0 +1,140 @@
+{
+    "id": "backstop_default",
+    "viewports": [
+        {
+            "label": "phone",
+            "width": 320,
+            "height": 480
+        },
+        {
+            "label": "tablet",
+            "width": 1024,
+            "height": 768
+        },
+        {
+            "label": "desktop",
+            "width": 1980,
+            "height": 1024
+        }
+    ],
+    "onBeforeScript": "puppet/onBefore.js",
+    "onReadyScript": "puppet/onReady.js",
+    "scenarios": [
+        {
+            "label": "Magic Cards Homepage",
+            "cookiePath": "backstop/engine_scripts/cookies.json",
+            "url": "https://magic-cards-one.vercel.app/home",
+            "referenceUrl": "",
+            "readyEvent": "",
+            "readySelector": "",
+            "delay": 1500,
+            "hideSelectors": [],
+            "removeSelectors": [],
+            "hoverSelector": "",
+            "clickSelector": "",
+            "postInteractionWait": 0,
+            "selectors": [],
+            "selectorExpansion": true,
+            "expect": 0,
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true
+        },
+        {
+            "label": "Magic Cards Legal Mentions Page",
+            "cookiePath": "backstop/engine_scripts/cookies.json",
+            "url": "https://magic-cards-one.vercel.app/legals",
+            "referenceUrl": "",
+            "readyEvent": "",
+            "readySelector": "",
+            "delay": 1500,
+            "hideSelectors": [],
+            "removeSelectors": [],
+            "hoverSelector": "",
+            "clickSelector": "",
+            "postInteractionWait": 0,
+            "selectors": [],
+            "selectorExpansion": true,
+            "expect": 0,
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true
+        },
+        {
+            "label": "Magic Cards Legal Cards Page",
+            "cookiePath": "backstop/engine_scripts/cookies.json",
+            "url": "https://magic-cards-one.vercel.app/cards",
+            "referenceUrl": "",
+            "readyEvent": "",
+            "readySelector": "",
+            "delay": 1500,
+            "hideSelectors": [],
+            "removeSelectors": [],
+            "hoverSelector": "",
+            "clickSelector": "",
+            "postInteractionWait": 0,
+            "selectors": [],
+            "selectorExpansion": true,
+            "expect": 0,
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true
+        },
+        {
+            "label": "Magic Cards Legal Cards Page",
+            "cookiePath": "backstop/engine_scripts/cookies.json",
+            "url": "https://magic-cards-one.vercel.app/cards/8d74a469-c71d-4773-99d3-5456b31df424",
+            "referenceUrl": "",
+            "readyEvent": "",
+            "readySelector": "",
+            "delay": 1500,
+            "hideSelectors": [],
+            "removeSelectors": [],
+            "hoverSelector": "",
+            "clickSelector": "",
+            "postInteractionWait": 0,
+            "selectors": [],
+            "selectorExpansion": true,
+            "expect": 0,
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true
+        },
+        {
+            "label": "Magic Cards Legal Cards Page",
+            "cookiePath": "backstop/engine_scripts/cookies.json",
+            "url": "https://magic-cards-one.vercel.app/contact",
+            "referenceUrl": "",
+            "readyEvent": "",
+            "readySelector": "",
+            "delay": 1500,
+            "hideSelectors": [],
+            "removeSelectors": [],
+            "hoverSelector": "",
+            "clickSelector": "",
+            "postInteractionWait": 0,
+            "selectors": [],
+            "selectorExpansion": true,
+            "expect": 0,
+            "misMatchThreshold": 0.1,
+            "requireSameDimensions": true
+        }
+    ],
+    "paths": {
+        "bitmaps_reference": "backstop/bitmaps_reference",
+        "bitmaps_test": "backstop/bitmaps_test",
+        "engine_scripts": "backstop/engine_scripts",
+        "html_report": "backstop/html_report",
+        "ci_report": "backstop/ci_report"
+    },
+    "report": [
+        "browser"
+    ],
+    "engine": "puppeteer",
+    "engineOptions": {
+        "args": [
+            "--no-sandbox"
+        ]
+    },
+    "asyncCaptureLimit": 5,
+    "asyncCompareLimit": 50,
+    "debug": false,
+    "delay": 500,
+    "debugWindow": false
+}
