@@ -102,7 +102,7 @@ export default function Contact() {
 					src='https://wallpaperaccess.com/full/2288846.jpg'
 					alt='magic background'
 					layout='fill'
-					quality={100}
+					quality={60}
 					style={{
 						transform: 'scale(-1, 1)'
 					}}
