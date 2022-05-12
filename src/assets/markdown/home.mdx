@@ -6,15 +6,15 @@ import { Grid, Typography, Divider } from '@mui/material';
 
 ## Game Description
 
-<Typography variant='body1' component='div' sx={{ mb: 5 }}>
-	Magic: The Gathering (colloquially known as Magic or MTG) is a tabletop and digital collectible card game created by
-	Richard Garfield. Released in 1993 by Wizards of the Coast (now a subsidiary of Hasbro), Magic was the first trading
-	card game and had approximately thirty-five million players as of December 2018, and over twenty billion Magic cards
-	were produced in the period from 2008 to 2016, during which time it grew in popularity.
-</Typography>
-
 <Grid container spacing={5}>
-    <Grid item xs={12} sm={7} md={8}>
+    <Grid item xs={12} md={8}>
+        <Typography variant='body1' component='div' sx={{ mb: 5 }}>
+            Magic: The Gathering (colloquially known as Magic or MTG) is a tabletop and digital collectible card game created by
+            Richard Garfield. Released in 1993 by Wizards of the Coast (now a subsidiary of Hasbro), Magic was the first trading
+            card game and had approximately thirty-five million players as of December 2018, and over twenty billion Magic cards
+            were produced in the period from 2008 to 2016, during which time it grew in popularity.
+        </Typography>
+
         ## Game Market
 
         <Typography variant='body1' component='div' sx={{ mb: 6 }}>
@@ -31,7 +31,7 @@ import { Grid, Typography, Divider } from '@mui/material';
         </Typography>
     </Grid>
 
-    <Grid item xs={12} sm={5} md={4}>
+    <Grid item xs={12} md={4} justifyContent='center' sx={{pt: 0}}>
         ### {props.card.name}
 
         <Typography variant='body1' component='div' sx={{mt: 2}}>
