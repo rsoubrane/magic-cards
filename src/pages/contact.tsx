@@ -11,6 +11,8 @@ import { Container, Button, Typography, TextField, Stack, Paper } from '@mui/mat
 import Layout from '../layouts';
 // components
 import Page from '../components/Page';
+// assets
+import ContactBG from '../assets/contact-bg.jpeg';
 // types
 import { User } from 'src/@types/user';
 
@@ -99,13 +101,14 @@ export default function Contact() {
 					padding: 0
 				}}>
 				<Image
-					src='https://wallpaperaccess.com/full/2288846.jpg'
+					src={ContactBG}
 					alt='magic background'
 					layout='fill'
 					quality={60}
 					style={{
 						transform: 'scale(-1, 1)'
 					}}
+					priority={true}
 				/>
 
 				<RootStyle variant='outlined'>
@@ -152,7 +155,7 @@ export default function Contact() {
 											.map((item) => item !== '')
 											.includes(false) || state.submitting
 									}>
-									Submit Now
+									Send message
 								</Button>
 							</Stack>
 						</form>
