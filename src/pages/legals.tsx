@@ -7,7 +7,7 @@ import Layout from '../layouts';
 // components
 import Page from '../components/Page';
 // markdown
-const LegalsMD = dynamic(() => import('../assets/markdown/license.mdx'), { ssr: false });
+const LegalsMD = dynamic(() => import('../p_markdown/license.mdx'), { ssr: false });
 
 // ----------------------------------------------------------------------
 

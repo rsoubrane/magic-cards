@@ -10,7 +10,7 @@ import Layout from '../layouts';
 import Page from '../components/Page';
 import HomeCard from '../components/HomeCard';
 // markdown
-const HomeMD = dynamic(() => import('../assets/markdown/home.mdx'), { ssr: false });
+const HomeMD = dynamic(() => import('../p_markdown/home.mdx'), { ssr: false });
 // types
 import { Card } from 'src/@types/card';
 

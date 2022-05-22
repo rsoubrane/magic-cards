@@ -20,7 +20,8 @@ const MainLayout = styled(
 	[theme.breakpoints.up('md')]: {
 		paddingLeft: 64,
 		paddingRight: 64,
-		width: '100%',
+		width: '90%',
+		marginLeft: '5%',
 		transition: theme.transitions.create('margin-left', {
 			duration: theme.transitions.duration.shorter
 		})
