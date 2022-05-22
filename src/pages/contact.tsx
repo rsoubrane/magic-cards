@@ -47,7 +47,7 @@ export default function Contact() {
 	const [user, setUser] = useState<User | null>(null);
 
 	const [data, setData] = useState({
-		name: user?.firstName || '',
+		name: user?.firstName ? `${user?.firstName} ${user?.lastName}` : '',
 		emailAddress: user?.emailAddress || '',
 		message: ''
 	});
@@ -59,7 +59,7 @@ export default function Contact() {
 			setUser(user);
 			setData({
 				...data,
-				name: user.firstName,
+				name: `${user?.firstName} ${user?.lastName}`,
 				emailAddress: user.emailAddress
 			});
 		}

@@ -52,7 +52,7 @@ export default function ListCard({ card }: { card: CardType }) {
 	const { id, image_uris, name, printed_name, rarity, set_name, released_at } = card;
 
 	return (
-		<motion.div key={id} transition={{ duration: 0.2 }} whileHover={{ scale: 1.075 }}>
+		<motion.div id='test-list-card' key={id} transition={{ duration: 0.2 }} whileHover={{ scale: 1.075 }}>
 			<Link href={{ pathname: `/cards/${id}` }} passHref>
 				<CardStyle>
 					<CardMedia

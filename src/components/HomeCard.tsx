@@ -30,7 +30,7 @@ export const HomeCard = ({ card }: { card: CardType }) => (
 				<Image src={card.image_uris.border_crop} alt='card image' width={260} height={325} />
 			</motion.div>
 		</Box>
-		<CardContent sx={{ m: 0, p: 3, pt: 2 }}>
+		<CardContent id='test-main-card-content' sx={{ m: 0, p: 3, pt: 2 }}>
 			<Typography variant='subtitle1'>Set: {card.set_name}</Typography>
 			<Typography variant='subtitle2'>Power: {card.power}</Typography>
 			<Typography variant='subtitle2'>Toughness: {card.toughness}</Typography>

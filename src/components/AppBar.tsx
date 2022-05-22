@@ -38,15 +38,15 @@ const AppBar = () => {
 	const HomeButton = ({ sx }: any) => (
 		<Link href='/home' passHref>
 			<Typography variant='h6' noWrap component='div' sx={{ ...sx, cursor: 'pointer' }}>
-				<Image src={Logo} alt='Logo' width={180} height={50} quality={50} />
+				<Image src={Logo} id='test-logo' alt='Logo' width={180} height={50} quality={50} />
 			</Typography>
 		</Link>
 	);
 
 	return (
-		<MUIAppBar position='sticky'>
+		<MUIAppBar id='test-navbar' position='sticky'>
 			<Container maxWidth='xl'>
-				<Toolbar disableGutters>
+				<Toolbar id='test-navbar-toolbar' disableGutters>
 					{/* MOBILE VERSION OF THE APP BAR */}
 					<HomeButton sx={{ mr: 1, display: { xs: 'none', md: 'flex', justifyContent: 'center' } }} />
 					<Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -91,7 +91,9 @@ const AppBar = () => {
 
 					{/* DESKTOP VERSION OF THE APP BAR */}
 					<HomeButton sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }} />
-					<Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'flex-end' } }}>
+					<Box
+						id='text-navbar-menu'
+						sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'flex-end' } }}>
 						{pages.map((page) => (
 							<Link key={page.id} href={`/${page.id}`} passHref>
 								<Button

@@ -43,7 +43,7 @@ export default function CardsPage({ cards }: { cards: Card[] }) {
 					links={[{ name: `${cards.length} Most powerful cards of the game` }]}
 				/>
 
-				<Grid container spacing={3}>
+				<Grid id='test-container-cards' container spacing={3}>
 					{cards &&
 						cards.map((card: Card) => (
 							<Grid key={card.id} item xs={12} md={6} lg={4}>

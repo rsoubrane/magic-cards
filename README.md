@@ -6,35 +6,54 @@ The goal of this project is quite simple. We want to be able to provide a platfo
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-It also uses packages like Material UI for styling, mswjs for mocking the data, cypress & jest for testing purposes as well as framer-motion for animations and backstopjs to automate visual regression.
+It also uses packages like Material UI for styling, mswjs for mocking the data, cypress for e2e testing as well as framer-motion for animations and backstopjs to automate visual regression.
 
 ## Getting Started
 
-First, install the dependencies of the project by running :
-
+### Dependencies installation :  
 ```bash
-npm install
-# or
 yarn
 ```
+<br/>
 
-then, run the development server:
-
+### Development server :  
 ```bash
-npm run dev
-# or
 yarn dev
 ```
 
-You can also run tests using :
-
-```bash
-npm run test
-# or
-yarn test
-```
-
 Open [http://localhost:3002](http://localhost:3002) with your browser to see the result.
+<br/>
+
+### Build project :  
+```bash
+yarn build
+```
+<br/>
+
+### Format & lint project :  
+```bash
+yarn format
+yarn lint
+yarn lint:fix
+```
+<br/>
+
+### Test the project :  
+#### Cypress
+```bash
+# Visual method 
+yarn cy:open
+# CLI method 
+backstop test
+```
+#### backstop.js   
+```bash
+# Generate the references of the project
+backstop reference
+# Test those references against the website
+backstop test
+```
+<br/>
 
 
 ## Assignment - Create a magic card collection site with the following features
@@ -52,8 +71,8 @@ Open [http://localhost:3002](http://localhost:3002) with your browser to see the
 - [x] The layout must use flexbox and/or grid
 - [x] Animations must be present via `framer-motion`.
 - [x] backstop.js must be present on the project with a reference already generated - You can see the references in `./src/backstop/bitmaps_reference` and access the working tests [here](./backstop/html_report/index.html)
-- [ ] Functional tests will be present with cypress (testing user paths)
-- [ ] A clean `package.json` that allows to install the project and launch all the necessary commands (dev, build, test, etc)
-- [x] An `README.md` explaining the project and the commands exposed in the `package.json`.
+- [x] Functional tests will be present with cypress (testing user paths)
+- [x] A clean `package.json` that allows to install the project and launch all the necessary commands (dev, build, test, etc)
+- [x] A `README.md` explaining the project and the commands exposed in the `package.json`.
 - [x] API : [https://scryfall.com/docs/api](https://scryfall.com/docs/api)
 - [x] The site must be hosted on [vercel.com](http://vercel.com) - You can access it by going [here](https://magic-cards-one.vercel.app/)

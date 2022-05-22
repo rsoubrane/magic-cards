@@ -72,6 +72,7 @@ export default function AccountPopover() {
 			</Container>
 
 			<Container
+				id='test-account-popover'
 				sx={{
 					display: { xs: 'none', md: 'contents' },
 					width: '100%',
@@ -124,12 +125,12 @@ export default function AccountPopover() {
 								</Typography>
 							</Box>
 							<Divider sx={{ borderStyle: 'dashed' }} />
-							<MenuItem onClick={() => handleLogout()} sx={{ m: 1 }}>
+							<MenuItem id='test-account-popover-logout' onClick={() => handleLogout()} sx={{ m: 1 }}>
 								Logout
 							</MenuItem>
 						</>
 					) : (
-						<MenuItem onClick={() => handleLogin()} sx={{ m: 1 }}>
+						<MenuItem id='test-account-popover-login' onClick={() => handleLogin()} sx={{ m: 1 }}>
 							Login
 						</MenuItem>
 					)}

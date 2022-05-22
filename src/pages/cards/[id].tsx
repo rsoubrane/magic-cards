@@ -85,7 +85,7 @@ export default function CardPage({ card }: { card: CardType }) {
 	}));
 
 	const CardContent = () => (
-		<MUICardContent>
+		<MUICardContent id='test-card-content'>
 			<Stack flex='colum' justifyContent='space-around' alignItems='flex-start'>
 				<Typography variant='h4'>{name}</Typography>
 				<Divider sx={{ width: '100%', borderStyle: 'line', my: 1 }} />
@@ -102,7 +102,7 @@ export default function CardPage({ card }: { card: CardType }) {
 				<Divider sx={{ width: '100%', borderStyle: 'line', my: 1 }} />
 				<Typography>Illustrated by {artist}</Typography>
 				<Divider sx={{ width: '100%', borderStyle: 'line', my: 1 }} />
-				<Grid container>
+				<Grid container id='test-details-card'>
 					{Object.entries(legalities).map(
 						([key, value]) =>
 							LEGALITIES_DISPLAY.includes(key) && (
@@ -148,7 +148,13 @@ export default function CardPage({ card }: { card: CardType }) {
 						container
 						sx={{ display: { xs: 'flex', md: 'none' }, justifyContent: 'center', alignItems: 'center' }}>
 						<Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center' }}>
-							<Image src={image_uris.png} width={370} height={500} alt='card image' />
+							<Image
+								id='test-card-image'
+								src={image_uris.png}
+								width={370}
+								height={500}
+								alt='card image'
+							/>
 						</Grid>
 						<Grid item xs={12} sx={{ mx: 1, mt: 3 }}>
 							<Card sx={{ textAlign: 'center' }}>

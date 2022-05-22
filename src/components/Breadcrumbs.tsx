@@ -44,6 +44,7 @@ export default function Breadcrumbs({ links, activeLast = false, ...other }: Pro
 
 	return (
 		<MUIBreadcrumbs
+			id='test-breadcrumbs'
 			separator={
 				<Box component='span' sx={{ width: 4, height: 4, borderRadius: '50%', bgcolor: 'text.disabled' }} />
 			}
