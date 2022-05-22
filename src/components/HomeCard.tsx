@@ -11,7 +11,7 @@ import Link from 'next/link';
 
 const CardStyle = styled(Card)({
 	position: 'relative',
-	maxWidth: 220,
+	maxWidth: 260,
 	boxShadow: '0 8px 24px 0 rgba(0,0,0,0.12)',
 	overflow: 'visible',
 	borderRadius: 16
@@ -27,7 +27,7 @@ export const HomeCard = ({ card }: { card: CardType }) => (
 	<CardStyle>
 		<Box>
 			<motion.div whileHover='hover' variants={frameVariants} transition={transition}>
-				<Image src={card.image_uris.border_crop} alt='card image' width={220} height={300} />
+				<Image src={card.image_uris.border_crop} alt='card image' width={260} height={325} />
 			</motion.div>
 		</Box>
 		<CardContent sx={{ m: 0, p: 3, pt: 2 }}>

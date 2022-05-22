@@ -38,7 +38,7 @@ const AppBar = () => {
 	const HomeButton = ({ sx }: any) => (
 		<Link href='/home' passHref>
 			<Typography variant='h6' noWrap component='div' sx={{ ...sx, cursor: 'pointer' }}>
-				<Image src={Logo} alt='Logo' width={200} height={50} quality={50} />
+				<Image src={Logo} alt='Logo' width={180} height={50} quality={50} />
 			</Typography>
 		</Link>
 	);
@@ -48,7 +48,7 @@ const AppBar = () => {
 			<Container maxWidth='xl'>
 				<Toolbar disableGutters>
 					{/* MOBILE VERSION OF THE APP BAR */}
-					<HomeButton sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }} />
+					<HomeButton sx={{ mr: 1, display: { xs: 'none', md: 'flex', justifyContent: 'center' } }} />
 					<Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
 						<IconButton
 							size='large'
