@@ -3,115 +3,60 @@
     "viewports": [
         {
             "label": "phone",
-            "width": 320,
-            "height": 480
+            "width": 414,
+            "height": 896
         },
         {
             "label": "tablet",
-            "width": 1024,
-            "height": 768
+            "width": 768,
+            "height": 1024
         },
         {
             "label": "desktop",
-            "width": 1980,
-            "height": 1024
+            "width": 1920,
+            "height": 1080
         }
     ],
     "onBeforeScript": "puppet/onBefore.js",
     "onReadyScript": "puppet/onReady.js",
     "scenarios": [
         {
-            "label": "Magic Cards Homepage",
-            "cookiePath": "backstop/engine_scripts/cookies.json",
+            "label": "Homepage",
             "url": "https://magic-cards-one.vercel.app/home",
-            "referenceUrl": "",
-            "readyEvent": "",
-            "readySelector": "",
-            "delay": 1500,
-            "hideSelectors": [],
-            "removeSelectors": [],
-            "hoverSelector": "",
-            "clickSelector": "",
+            "delay": 2000,
             "postInteractionWait": 0,
-            "selectors": [],
-            "selectorExpansion": true,
-            "expect": 0,
             "misMatchThreshold": 0.1,
             "requireSameDimensions": true
         },
         {
-            "label": "Magic Cards Legal Mentions Page",
-            "cookiePath": "backstop/engine_scripts/cookies.json",
+            "label": "Legal Mentions Page",
             "url": "https://magic-cards-one.vercel.app/legals",
-            "referenceUrl": "",
-            "readyEvent": "",
-            "readySelector": "",
-            "delay": 1500,
-            "hideSelectors": [],
-            "removeSelectors": [],
-            "hoverSelector": "",
-            "clickSelector": "",
+            "delay": 2000,
             "postInteractionWait": 0,
-            "selectors": [],
-            "selectorExpansion": true,
-            "expect": 0,
             "misMatchThreshold": 0.1,
             "requireSameDimensions": true
         },
         {
-            "label": "Magic Cards Legal Cards Page",
-            "cookiePath": "backstop/engine_scripts/cookies.json",
+            "label": "Cards Page",
             "url": "https://magic-cards-one.vercel.app/cards",
-            "referenceUrl": "",
-            "readyEvent": "",
-            "readySelector": "",
-            "delay": 1500,
-            "hideSelectors": [],
-            "removeSelectors": [],
-            "hoverSelector": "",
-            "clickSelector": "",
+            "delay": 2000,
             "postInteractionWait": 0,
-            "selectors": [],
-            "selectorExpansion": true,
-            "expect": 0,
             "misMatchThreshold": 0.1,
             "requireSameDimensions": true
         },
         {
-            "label": "Magic Cards Legal Cards Page",
-            "cookiePath": "backstop/engine_scripts/cookies.json",
+            "label": "Card Page",
             "url": "https://magic-cards-one.vercel.app/cards/8d74a469-c71d-4773-99d3-5456b31df424",
-            "referenceUrl": "",
-            "readyEvent": "",
-            "readySelector": "",
-            "delay": 1500,
-            "hideSelectors": [],
-            "removeSelectors": [],
-            "hoverSelector": "",
-            "clickSelector": "",
+            "delay": 2000,
             "postInteractionWait": 0,
-            "selectors": [],
-            "selectorExpansion": true,
-            "expect": 0,
             "misMatchThreshold": 0.1,
             "requireSameDimensions": true
         },
         {
-            "label": "Magic Cards Legal Cards Page",
-            "cookiePath": "backstop/engine_scripts/cookies.json",
+            "label": "Contact Page",
             "url": "https://magic-cards-one.vercel.app/contact",
-            "referenceUrl": "",
-            "readyEvent": "",
-            "readySelector": "",
-            "delay": 1500,
-            "hideSelectors": [],
-            "removeSelectors": [],
-            "hoverSelector": "",
-            "clickSelector": "",
+            "delay": 2000,
             "postInteractionWait": 0,
-            "selectors": [],
-            "selectorExpansion": true,
-            "expect": 0,
             "misMatchThreshold": 0.1,
             "requireSameDimensions": true
         }
@@ -132,9 +77,9 @@
             "--no-sandbox"
         ]
     },
-    "asyncCaptureLimit": 5,
+    "asyncCaptureLimit": 10,
     "asyncCompareLimit": 50,
     "debug": false,
-    "delay": 500,
+    "delay": 1000,
     "debugWindow": false
 }
